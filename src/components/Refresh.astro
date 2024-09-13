@@ -1,7 +1,35 @@
-<a id="summon">Summon</a>
+<p id="summon-button">Summon</p>
+<style>
+    #summon-button {
+        margin-bottom: 2rem;
+        border: 1px solid rgba(var(--accent-light), 25%);
+        background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+        padding: 1.5rem;
+        border-radius: 8px;
+        text-align: center;
+    }
+    #summon-button code {
+
+        font-size: 0.8em;
+        font-weight: bold;
+        background: rgba(var(--accent-light), 12%);
+        color: rgb(var(--accent-light));
+        border-radius: 4px;
+        padding: 0.3em 0.4em;
+    }
+    #summon-button strong {
+        color: rgb(var(--accent-light));
+    }
+
+    #summon-button:hover {
+        background-color: rgb(112, 61, 230);
+        transition: 0.7s;
+    }
+</style>
+
 
 <script>
-  document.getElementById('summon').addEventListener('click', () => {
+  document.getElementById("summon-button").addEventListener('click', () => {
     window.location.reload();
   });
 </script>

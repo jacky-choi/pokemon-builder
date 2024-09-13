@@ -4,7 +4,7 @@ import Card from '../components/Card.astro';
 import Refresh from '../components/Refresh.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Pokemon Title">
 	<main>
 		<svg
 			class="astro-a"
@@ -35,7 +35,7 @@ import Refresh from '../components/Refresh.astro';
 			</defs>
 		</svg>
 		<h1>Pokemon <span class="text-gradient">Builder</span></h1>
-		<p class="instructions">
+		<p class="summon-button">
 			<Refresh></Refresh>
 		</p>
 
@@ -82,31 +82,6 @@ import Refresh from '../components/Refresh.astro';
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-		text-align: center;
-	}
-	.instructions code {
-		
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-
-	.instructions:hover {
-		background-color: rgb(112, 61, 230);
-		transition: 0.7s;
 	}
 	.link-card-grid {
 		display: grid;
